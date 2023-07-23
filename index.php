@@ -22,30 +22,31 @@
         <div class="form-container">
             <form>
                 <div class="row">
-                    <div class="col">
+                    <div class="col font-size">
                         <label for="firstname">First Name</label>
                         <input type="text" class="form-control" placeholder="First name" name="firstname">
                     </div>
-                    <div class="col">
+                    <div class="col font-size">
                         <label for="lastname">Last Name</label>
                         <input type="text" class="form-control" placeholder="Last name" name="lastname">
                     </div>
                 </div><br />
-                <div class="form-group">
+                <div class="form-group font-size">
                     <label for="email">Email</label>
-                    <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
+                    <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email"
+                        name="email">
                 </div>
                 <div class="form-group mb-3">
-                    <div class="form-group">
+                    <div class="form-group font-size">
                         <label for="inputAddress2">Address</label>
-                        <input type="text" class="form-control" id="inputAddress2" placeholder="address" name="address">
+                        <input type="text" class="form-control" placeholder="Address" name="address">
                     </div>
                     <div class="form-row">
-                        <div class="form-group col-md-4">
-                            <label for="inputCity">City</label>
-                            <input type="text" class="form-control" id="inputCity" placeholder="City">
+                        <div class="form-group col-md-4 font-size">
+                            <label for="city">City</label>
+                            <input type="text" class="form-control" placeholder="City" name="city">
                         </div>
-                        <div class="form-group col-md-4">
+                        <div class="form-group col-md-4 font-size">
                             <label for="state">State</label>
                             <select id="inputState" class="form-control" name="state">
                                 <option selected>Choose...</option>
@@ -80,18 +81,18 @@
                             </select>
                         </div>
 
-                        <div class=" form-group col-md-2">
+                        <div class=" form-group col-md-2 font-size">
                             <label for="zip">Zip</label>
-                            <input type="text" class="form-control" id="inputZip" placeholder="Zip" name="zip">
+                            <input type="text" class="form-control" placeholder="Zip" name="zip">
                         </div>
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group font-size">
                         <label for="message">Message</label>
                         <textarea class="form-control" placeholder="Write Your Message Here!!"
                             name="message"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn-lg btn-primary  btn-block btn-dark">Submit</button>
             </form>
         </div>
 
