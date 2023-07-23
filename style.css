@@ -1,0 +1,20 @@
+body{
+    margin-top: 20px;
+    padding:20px;
+}
+.container {
+    background-color: #d2d2d2;
+    padding: 20px;
+    border-radius:5px;
+}
+.heading{
+    text-align: center;
+}
+.heading h1{
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-style: 800;
+    color:white ;
+}
