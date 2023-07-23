@@ -20,7 +20,7 @@
             <h1>Contact From Using PHP</h1>
         </div>
         <div class="form-container">
-            <form>
+            <form action="contact.php" method="post">
                 <div class="row">
                     <div class="col font-size">
                         <label for="firstname">First Name</label>
@@ -35,6 +35,10 @@
                     <label for="email">Email</label>
                     <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email"
                         name="email">
+                </div>
+                <div class="form-group font-size">
+                    <label for="phone">Contact No</label>
+                    <input type="phone" class="form-control" placeholder="Enter Phone No" name="phone">
                 </div>
                 <div class="form-group mb-3">
                     <div class="form-group font-size">
