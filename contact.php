@@ -1,27 +1,28 @@
 <?php
-
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "signupform";
+$dbname = "form";
 
 
-
-// Connecting database 
+// Create Connection
 
 try {
-
-    $conn = mysqli_connect("$servername,$username,$password,$dbname");
-    if ($conn === false) {
-        die("ERROR: Could not connect. " . mysqli_connect_error());
+    $conn = new mysqli($servername, $username, $password, $dbname);
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
     }
-
-    //Taking data from user
-
-    $name = $_REQUEST['firstname'] + " " + $_REQUEST['lastname'];
+    $firstname = $_REQUEST['firstname'];
+    $lastname = $_REQUEST['lastname'];
+    $name = $firstname . ' ' . $lastname;
     $email = $_REQUEST['email'];
     $phone = $_REQUEST['phone'];
+
     $address = $_REQUEST['address'];
+    $city = $_REQUEST['city'];
+    $state = $_REQUEST['state'];
+    $zip = $_REQUEST['zip'];
+    $address = $address . ', ' . $city . ', ' . $state . ', ' . $zip;
     $message = $_REQUEST['message'];
 
 
@@ -34,12 +35,13 @@ try {
     } else {
         echo 'Error updating record';
     }
-
-    // close Connection
-    mysqli_close($conn);
-
-} catch (\Throwable $th) {
-    die("ERROR: $th ");
+} catch (Exception $e) {
+    print "Error : " . $e;
 }
+
+// close Connection
+mysqli_close($conn);
+
+
 
 ?>
